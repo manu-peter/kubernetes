@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vol-pod
+  labels:
+    name: vol-pod
+spec:
+  containers:
+    - name: vol-container
+      image: httpd
+      ports:
+        - containerPort: 80
+          name: vol-port
+      volumeMounts:
+        - mountPath: /usr/local/apache2/htdocs
+          name: trial-vol
+  volumes:
+    - name: trial-vol
+      hostPath:
+        path: /home/synnefo/kubevol/index.html
+---
+
+    
+
+

@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trial-pod
+  labels:
+    app: trial-pod
+spec:
+  containers:
+  - name: trial-pod-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: trial-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: trial-pod
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+

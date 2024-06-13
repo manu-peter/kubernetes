@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: service
+metadata:
+  name: my-serv
+spec:
+  type: Nodeport
+  selector:
+    test: hi
+  ports:
+    - port: 80
+      targetport: 80
+      nodeport: 30007
+---
+
+

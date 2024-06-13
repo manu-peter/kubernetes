@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: first-pod
+  labels:
+    tag: free
+spec:
+  containers:
+    - name: httpd1
+      image: httpd
+      ports:
+        - containerPort: 80
+          name: free-port
+---
+
+
+

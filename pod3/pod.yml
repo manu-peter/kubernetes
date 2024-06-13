@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: manu
+  labels:
+    test: hi
+spec:
+  containers:
+    - name: idk
+      image: httpd
+      ports:
+        - containerport: 80
+
