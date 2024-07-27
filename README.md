@@ -8,4 +8,4 @@ Kubernetes is originally developed by Google.
 
 Inspired by Google's internal cluster management system, Borg, Kubernetes makes everything associated with deploying and managing your application easier. 
 
-Kubernetes Providies automated container orchestration, Kubernetes improves your reliability and reduces the time and resources attributed to daily operations
+Kubernetes Providies automated container orchestration, Kubernetes improves your reliability and reduces the time and resources attributed to daily operations.
