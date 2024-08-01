@@ -63,28 +63,32 @@ Pod Management Commands :
 * kubectl logs POD_NAME --> To Print the logs from a pod .
 * kubectl exec -it POD_NAME -- COMMAND --> To Execute a command inside a container of a pod .
 
-Deployment and Service Management
-kubectl get deployments: List all deployments.
-kubectl describe deployment DEPLOYMENT_NAME: Show detailed information about a deployment.
-kubectl apply -f FILE.yaml: Apply configuration changes defined in a YAML file.
-kubectl delete -f FILE.yaml: Delete resources defined in a YAML file.
-kubectl expose deployment DEPLOYMENT_NAME --port=PORT --target-port=TARGET_PORT: Expose a deployment as a service .
+Deployment and Service Management :
 
-Namespace Management
-kubectl get namespaces: List all namespaces.
-kubectl create namespace NAMESPACE_NAME: Create a new namespace.
-kubectl delete namespace NAMESPACE_NAME: Delete a namespace .
+* kubectl get deployments --> List all deployments .
+* kubectl describe deployment DEPLOYMENT_NAME --> Show detailed information about a deployment .
+* kubectl apply -f FILE.yaml --> Apply configuration changes defined in a YAML file .
+* kubectl delete -f FILE.yaml --> Delete resources defined in a YAML file .
+* kubectl expose deployment DEPLOYMENT_NAME --port=PORT --target-port=TARGET_PORT --> Expose a deployment as a service .
 
-Resource Management
-kubectl get services: List all services.
-kubectl get nodes: List all nodes in the cluster.
-kubectl describe service SERVICE_NAME: Show detailed information about a service.
-kubectl top pod: Show resource usage (CPU/Memory) for pods .
+Namespace Management :
 
-Configuration and Scaling
-kubectl scale deployment DEPLOYMENT_NAME --replicas=NUM: Scale a deployment to a specified number of replicas.
-kubectl rollout status deployment DEPLOYMENT_NAME: Get the rollout status of a deployment.
-kubectl rollout undo deployment DEPLOYMENT_NAME: Roll back to the previous version of a deployment .
+* kubectl get namespaces --> List all namespaces .
+* kubectl create namespace NAMESPACE_NAME --> Create a new namespace .
+* kubectl delete namespace NAMESPACE_NAME --> Delete a namespace .
+
+Resource Management :
+
+* kubectl get services --> List all services.
+* kubectl get nodes --> List all nodes in the cluster.
+* kubectl describe service SERVICE_NAME --> Show detailed information about a service.
+* kubectl top pod --> Show resource usage (CPU/Memory) for pods .
+
+Configuration and Scaling :
+
+* kubectl scale deployment DEPLOYMENT_NAME --replicas=NUM --> Scale a deployment to a specified number of replicas .
+* kubectl rollout status deployment DEPLOYMENT_NAME --> Get the rollout status of a deployment .
+* kubectl rollout undo deployment DEPLOYMENT_NAME --> Roll back to the previous version of a deployment .
 
 Advanced Usage
 kubectl get events: View events in the cluster.
