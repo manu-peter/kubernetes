@@ -79,9 +79,9 @@ Namespace Management :
 
 Resource Management :
 
-* kubectl get services --> List all services.
-* kubectl get nodes --> List all nodes in the cluster.
-* kubectl describe service SERVICE_NAME --> Show detailed information about a service.
+* kubectl get services --> List all services .
+* kubectl get nodes --> List all nodes in the cluster .
+* kubectl describe service SERVICE_NAME --> Show detailed information about a service .
 * kubectl top pod --> Show resource usage (CPU/Memory) for pods .
 
 Configuration and Scaling :
@@ -90,7 +90,8 @@ Configuration and Scaling :
 * kubectl rollout status deployment DEPLOYMENT_NAME --> Get the rollout status of a deployment .
 * kubectl rollout undo deployment DEPLOYMENT_NAME --> Roll back to the previous version of a deployment .
 
-Advanced Usage
-kubectl get events: View events in the cluster.
-kubectl port-forward POD_NAME LOCAL_PORT:REMOTE_PORT: Forward a local port to a port on a pod.
-kubectl cp POD_NAME:SOURCE_PATH DEST_PATH: Copy files or directories to and from containers.
+Advanced Usage :
+
+* kubectl get events --> View events in the cluster .
+* kubectl port-forward POD_NAME LOCAL_PORT:REMOTE_PORT --> Forward a local port to a port on a pod .
+* kubectl cp POD_NAME:SOURCE_PATH DEST_PATH --> Copy files or directories to and from containers .
